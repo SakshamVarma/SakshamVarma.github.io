@@ -1,60 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <title>Your Portfolio</title>
 </head>
-<body>
-    <nav id="navbar" class="bg-black flex flex-none flex-wrap justify-center h-auto w-screen backdrop-filter backdrop-blur-lg bg-opacity-100 sticky-top-0 overflow-x-auto">
-                <a href="https://github.com/SakshamVarma" target="_blank">
-                  <img src="icons8-github-48.png" alt="Github" class="linkedin hover:outline-white h-10 mx-5 mt-1 justify-center">
-                </a> 
-                <a href="https://www.linkedin.com/in/saksham-varma-45a218209/" target="_blank">
-                  <img src="icons8-linkedin-48.png" alt="LinkedIn" class="mx-7 h-12 justify-center">
-                </a>
-                <a href="mailto:saksham.varma02@gmail.com" target="_blank">
-                  <img clas="h-15 w-1/3" src="icons8-mail-48.png" alt="Mail" class="h-9 my-2 mx-5 justify-center">
-                </a> 
-    </nav>
-    
-    <main>
-      
-      <!-- <div class="bg-fixed bg-no-repeat bg-center w-screen h-screen" style="background-image: url('IMG_20220228_102049.jpg')"> -->
-        <div class="bg-cover bg-no-repeat bg-center w-screen h-screen object-cover" style="background-image: url('Abstract\ transparent\ background.png')"></div>
+
+<body class="" style="background-color: #EEEEEE;">
+
+  <!-- Navigation -->
+  <nav class="p-4 text-white" style="background-color: #1B262C;">
+    <div class="container mx-auto">
+      <div class="flex justify-between items-center">
+        <div>
+          <span class="font-bold text-xl">Saksham Varma</span>
+        </div>
+        <div>
+          <ul class="flex space-x-4">
+            <li><a href="#home" class="hover:underline">Home</a></li>
+            <li><a href="#project" class="hover:underline">Projects</a></li>
+            <li><a href="#exp" class="hover:underline">Experience</a></li>
+          </ul>
+        </div>
       </div>
-      <div class="flex justify-center content-center">
-        <div class="flex flex-col md:flex-row md:max-w-xl rounded-lg bg-white shadow-lg">
-          <img class=" w-full h-96 md:h-auto object-cover md:w-48 rounded-t-lg md:rounded-none md:rounded-l-lg" src="https://mdbootstrap.com/wp-content/uploads/2020/06/vertical.jpg" alt="" />
-          <div class="p-6 flex flex-col justify-start">
-            <h5 class="text-gray-900 text-xl font-medium mb-2">Card title</h5>
-            <p class="text-gray-700 text-base mb-4">
-              This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
-            </p>
-            <p class="text-gray-600 text-xs">Last updated 3 mins ago</p>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="bg-blue-700 text-white text-center py-20">
+    <div class="container mx-auto">
+      <h1 class="text-4xl font-bold mb-4">Hello, I'm Saksham Varma</h1>
+      <p class="text-lg mb-8">Passionate developer | Explorer of technology | Creator of awesome apps</p>
+
+      <!-- Social Icons -->
+      <div class="flex justify-center space-x-4">
+        <a href="https://www.linkedin.com/in/sakshamvarma" class="text-white hover:text-gray-300" target="_blank">
+          <img src="/images/icons8-linkedin-48-pad.png" alt="LinkedIn">
+        </a>
+        <a href="https://github.com/SakshamVarma" class="text-white hover:text-gray-300" target="_blank">
+          <img src="/images/icons8-github-48-pad.png" alt="Github">
+        </a>
+        <a href="mailto:saksham.varma02@gmail.com" class="text-white hover:text-gray-300" target="_blank">
+          <img src="/images/icons8-mail-48-pad.png" alt="Mail">
+        </a>
+        <!-- Add more social icons as needed -->
+      </div>
+    </div>
+  </header>
+
+
+  <!-- Projects Section -->
+  <section class="py-16" id="project">
+    <div class="container mx-auto">
+      <h2 class="text-3xl font-bold mb-8">My Projects</h2>
+      <div class="flex mx-auto">
+        <!-- Example Project Card -->
+        <div class="max-w-sm bg-white shadow-md rounded-md overflow-hidden mx-auto">
+          <img src="/images/stego-cover-2.png" alt="Project Image" class="w-full h-32 object-cover ">
+          <div class="p-4">
+            <h3 class="text-xl font-bold mb-2 text-center">Veil-Steganography App</h3>
+            <p class="text-gray-600 text-justify">The application utilizes LSB steganography, allowing users to conceal
+              and unveil sensitive information within images seamlessly.</p>
+            <a href="https://github.com/SakshamVarma/Steganography" target="_blank"
+              class="mt-4 inline-block bg-blue-700 text-white px-4 py-2 rounded-md">View Project</a>
           </div>
         </div>
-      </div>
-    </main>
-    
-    
-    <footer id="footer" class="text-center bg-black text-white flex flex-none h-auto w-screen overflow-x-auto">
-      <div class="container px-6 pt-6">
-        <div class="flex flex-wrap justify-center mb-6">
-          <a href="https://github.com/SakshamVarma" target="_blank">
-            <img src="icons8-github-48.png" alt="Github" class="h-10 mx-5 mt-1 justify-center">
-          </a> 
-          <a href="https://www.linkedin.com/in/saksham-varma-45a218209/" target="_blank">
-            <img src="icons8-linkedin-48.png" alt="LinkedIn" class="mx-7 h-12 justify-center">
-          </a>
-          <a href="mailto:saksham.varma02@gmail.com" target="_blank">
-            <img clas="h-15 w-1/3" src="icons8-mail-48.png" alt="Mail" class="h-9 my-2 mx-5 justify-center">
-          </a> 
+
+        <div class="max-w-sm bg-white shadow-md rounded-md overflow-hidden mx-auto">
+          <img src="/images/ml-cover.png" alt="Project Image" class="w-full h-32 object-cover">
+          <div class="p-4">
+            <h3 class="text-xl font-bold mb-2 text-center">Sign Language Detection</h3>
+            <p class="text-gray-600 text-justify">Real-time video capture and prediction using OpenCV. CNN Model trained
+              on MNIST Sign Language Dataset.</p>
+            <a href="https://github.com/SakshamVarma/Sign-Language-Detection" target="_blank"
+              class="mt-4 inline-block bg-blue-700 text-white px-4 py-2 rounded-md">View Project</a>
+          </div>
         </div>
+
+        <div class="max-w-sm bg-white shadow-md rounded-md overflow-hidden mx-auto">
+          <img src="/images/newzify-cover.png" alt="Project Image" class="w-full h-32 object-cover">
+          <div class="p-4">
+            <h3 class="text-xl font-bold mb-2 text-center">Newzify</h3>
+            <p class="text-gray-600 text-justify">Shows up-to-date News using the NewsAPI.org REST API.Allows user to Visit and Share sources of news headlines.</p>
+            <a href="https://github.com/SakshamVarma/Newzify-REST-API-NEWS-APP" target="_blank"
+              class="mt-4 inline-block bg-blue-700 text-white px-4 py-2 rounded-md">View Project</a>
+          </div>
+        </div>
+
+        <!-- Add more project cards as needed -->
       </div>
-    </footer>
+
+    </div>
+
+  </section>
+
+  <!-- Experience Section -->
+  <section class="py-16" id="exp">
+    <div class="container mx-auto">
+      <h2 class="text-3xl font-bold mb-8">My Experience</h2>
+
+      <div class="flex mx-auto">
+        <!-- Example Experience Card -->
+        <div class="max-w-md bg-white shadow-md rounded-md overflow-hidden mx-auto">
+          <div class="p-4">
+            <h3 class="text-2xl font-bold mb-2 text-center">Software Developer Intern</h3>
+            <p class="text-gray-600 text-center">ACM USS | New Delhi | 08/2023 - 09/2023</p>
+            <div class="flex justify-center">
+              <img src="/images/acm-logo.png" alt="ACM USS" class="h-32 mt-5">
+            </div>
+
+            <p class="mt-5 mx-4 text-justify">Real-Time Sign Language Prediction using OpenCV with a Trained CNN Model
+              on the MNIST Sign Language Dataset, achieving an impressive 99% accuracy.</p>
+          </div>
+        </div>
+
+        <div class="max-w-md bg-white shadow-md rounded-md overflow-hidden mx-auto">
+          <div class="p-4">
+            <h3 class="text-2xl font-bold mb-2 text-center">Android Developer Intern</h3>
+            <p class="text-gray-600 text-center">Best Bai | New Delhi | 07/2022 - 09/2022</p>
+            <div class="flex justify-center">
+              <img src="/images/bestbai-logo.png" alt="ACM USS" class="h-32 mt-5">
+            </div>
+            <p class="mt-5 mx-4 text-justify">
+              Designing and implementing a mobile application called "Best Bai" for customers, deploying it on the Play
+              Store, and leveraging Firebase services for Authentication, Real-Time Database, and Remote Config.</p>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-blue-700 text-white text-center py-4">
+    <div class="container mx-auto">
+      <p>&copy; 2024 Saksham Varma</p>
+    </div>
+  </footer>
 
 </body>
+
 </html>
